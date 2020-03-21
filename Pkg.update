@@ -1,0 +1,26 @@
+### output of Pkg.update()
+
+julia> Pkg.update()
+   Cloning default registries into `~/.julia`
+   Cloning registry from "https://github.com/JuliaRegistries/General.git"
+ERROR: failed to clone from https://github.com/JuliaRegistries/General.git, error: GitError(Code:ERROR, Class:Invalid, invalid version 0 on git_proxy_options)
+Stacktrace:
+ [1] #up#43(::Pkg.Types.UpgradeLevel, ::Pkg.Types.PackageMode, ::Bool, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.up), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:152
+ [2] up at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:146 [inlined]
+ [3] #up#42 at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:141 [inlined]
+ [4] up at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:141 [inlined]
+ [5] #up#39 at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:138 [inlined]
+ [6] up() at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:138
+ [7] top-level scope at REPL[7]:1
+caused by [exception 1]
+GitError(Code:ERROR, Class:Invalid, invalid version 0 on git_proxy_options)
+Stacktrace:
+ [1] #up#43(::Pkg.Types.UpgradeLevel, ::Pkg.Types.PackageMode, ::Bool, ::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}, ::typeof(Pkg.API.up), ::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:152
+ [2] up at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:146 [inlined]
+ [3] #up#42 at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:141 [inlined]
+ [4] up at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:141 [inlined]
+ [5] #up#39 at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:138 [inlined]
+ [6] up() at /build/julia/src/julia-1.3.1/usr/share/julia/stdlib/v1.3/Pkg/src/API.jl:138
+ [7] top-level scope at REPL[7]:1
+
+### I will put the solution as soon as I find one.
