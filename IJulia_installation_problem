@@ -1,0 +1,16 @@
+### Problem encountered during IJulia installation.
+
+### out put of Pkg.add("IJulia") is as follows
+
+julia> Pkg.add("IJulia")
+   Cloning default registries into `~/.julia`
+   Cloning registry from "https://github.com/JuliaRegistries/General.git"
+ERROR: failed to clone from https://github.com/JuliaRegistries/General.git, error: GitError(Code:ERROR, Class:Invalid, invalid version 0 on git_proxy_options)
+Stacktrace:
+ [1] top-level scope at REPL[9]:1
+caused by [exception 1]
+GitError(Code:ERROR, Class:Invalid, invalid version 0 on git_proxy_options)
+Stacktrace:
+ [1] top-level scope at REPL[9]:1
+
+julia>
